@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="formulaire.css" />
+    <title>Formulaire de renseignement</title>
+    <script src="appformulaire.js"></script>
+  </head>
+
+  <body>
+    <nav>
+      <div class="logologo">
+        <img src="images/Logo offi PNG.png" alt="logo" class="logo" />
+      </div>
+      <div class="menuicon" onclick="toggleMenu()">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+
+      <div class="headerlist">
+        <a href="index.html"><h1>Accueil</h1></a>
+        <a href="warframe.html"><h1 class="warframe">Warframe</h1></a>
+        <a href="r6.html"><h1 class="r6">Rainbow Six Siege</h1></a>
+        <a href="control.html"><h1 class="contr">Control</h1></a>
+        <a href="apropos.html"><h1 class="apropos">A Propos</h1></a>
+        <a href="formulaire.html"><h1 class="gras">Formulaire</h1></a>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="header">
+        <h2>Formulaire de renseignement</h2>
+        <div class="errors"></div>
+      </div>
+      <form action="" id="my-form">
+        <div class="boite">
+          <div class="div1">
+            <div>
+              <label for="firstName">Entrez un prénom</label>
+              <input
+                type="text"
+                name="firstName"
+                id="firstName"
+                placeholder="Entrez un prénom"
+              />
+            </div>
+            <div>
+              <label for="lastName">Entrez un nom</label>
+              <input
+                type="text"
+                name="lastName"
+                id="lastName"
+                placeholder="Entrez un nom"
+              />
+            </div>
+            <div>
+              <label for="age">Entrez un âge</label>
+              <input
+                type="text"
+                name="age"
+                id="age"
+                placeholder="Entrez un âge"
+              />
+            </div>
+            <div>
+              <label for="country">Sélectionnez un pays</label>
+              <select name="country" id="country">
+                <option value="null">Sélectionnez un pays</option>
+                <option value="Français">Français</option>
+                <option value="Tunisien">Tunisien</option>
+                <option value="Allemand">Allemand</option>
+                <option value="Comorien">Comorien</option>
+                <option value="Vietnamien">Vietnamien</option>
+                <option value="Belge">Belge</option>
+                <option value="Portugais">Portugais</option>
+                <option value="Cambodge">Cambodge</option>
+                <option value="Chinois">Chinois</option>
+                <option value="Algérie">Algérie</option>
+                <option value="Maroc">Maroc</option>
+                <option value="Sénégal">Sénégal</option>
+                <option value="Colombie">Colombie</option>
+                <option value="Bulgarie">Bulgarie</option>
+              </select>
+            </div>
+          </div>
+          <div class="div2">
+            <div>
+              <label for="email">Entrez un mail</label>
+              <input
+                type="text"
+                name="email"
+                id="email"
+                placeholder="Entrez un mail"
+              />
+            </div>
+            <div>
+              <label for="adresse">Entrez une adresse</label>
+              <input
+                type="text"
+                name="adresse"
+                id="adresse"
+                placeholder="Entrez une adresse"
+              />
+            </div>
+            <div>
+              <label for="ville">Entrez une ville</label>
+              <input
+                type="text"
+                name="ville"
+                id="ville"
+                placeholder="Entrez une ville"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="mdp">
+          <div>
+            <label for="mdp">Entrez un mot de passe</label>
+            <input
+              type="text"
+              name="mdp"
+              id="mdp"
+              placeholder="Entrez un mot de passe"
+            />
+          </div>
+          <div>
+            <label for="v-mdp">Répétez votre mot de passe</label>
+            <input
+              type="text"
+              name="v-mdp"
+              id="v-mdp"
+              placeholder="Répétez le mot de passe"
+            />
+          </div>
+        </div>
+        <div class="envoyer">
+          <input type="submit" value="Envoyer la demande" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

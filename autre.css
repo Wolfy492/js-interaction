@@ -1,0 +1,227 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 1;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+}
+body {
+  background-color: rgb(21, 21, 21);
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  margin: 0;
+}
+
+.headerlist {
+  margin-top: 40px;
+  margin-left: 62%;
+  float: right;
+  display: flex;
+  gap: 20px;
+}
+
+.headerlist a:hover h1 {
+  color: rgb(255, 255, 255);
+  font-size: 17px;
+}
+
+.logo {
+  display: flex;
+  height: 100px;
+}
+
+nav {
+  background-color: rgb(179, 161, 241);
+  display: flex;
+  border: 2px solid rgb(0, 0, 0);
+}
+.insta,
+.twitter {
+  width: 50px;
+  height: 50px;
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(48, 27, 63);
+  padding: 20px;
+  margin-top: 130px;
+}
+.social {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.footer-text {
+  margin-bottom: 10px;
+  color: white;
+}
+
+.gras {
+  font-size: 19px;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+p {
+  color: white;
+  max-width: 50%;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.top {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.da {
+  max-width: 50%;
+  margin-right: 20px;
+}
+
+.text {
+  text-align: left;
+}
+
+p {
+  color: white;
+  max-width: 50%;
+}
+
+.enbas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+h2,
+.textenbas {
+  color: white;
+  text-align: center;
+  max-width: 80%;
+  margin-bottom: 30px;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+.imag {
+  width: 80%;
+}
+
+/*menu déroulant*/
+.menuicon {
+  display: none;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.logologo {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 100px;
+}
+/*menu déroulant*/
+
+@media screen and (max-width: 768px) {
+  .headerlist {
+    margin-left: auto;
+    justify-content: center;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo {
+    margin-top: 20px;
+  }
+
+  .gras {
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: underline;
+  }
+
+  .headerlist a:hover h1 {
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+  }
+
+  .top {
+    margin-bottom: 10px;
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .da {
+    max-width: 80%;
+    margin-right: 0;
+    order: 1;
+  }
+
+  .top img {
+    max-width: 100%;
+    margin-bottom: 10px;
+    order: -1;
+  }
+  .text {
+    max-width: 90%;
+  }
+  /*menu déroulant*/
+
+  .logologo {
+    margin-bottom: 10px;
+  }
+
+  .headerlist {
+    display: none;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .menuopen .headerlist {
+    display: flex;
+  }
+
+  .menuicon {
+    display: block;
+  }
+  .headerlist a {
+    margin: 10px 0;
+    text-align: center;
+    margin-right: 170px; /*je n'arrive pas a centrer à cause margin-left: 62%; ligne 19 :c, mais au moins, le menu marche un peu près*/
+  }
+
+  /*menu déroulant*/
+}

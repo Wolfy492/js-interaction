@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 1;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+}
+body {
+  background-color: rgb(21, 21, 21);
+}
+
+.headerlist {
+  margin-top: 40px;
+  margin-left: 64%;
+  float: right;
+  display: flex;
+  gap: 20px;
+}
+
+.headerlist a:hover h1 {
+  color: rgb(255, 255, 255);
+  font-size: 17px;
+}
+
+.logo {
+  display: flex;
+  height: 100px;
+}
+
+nav {
+  background-color: rgb(179, 161, 241);
+  display: flex;
+  border: 2px solid rgb(0, 0, 0);
+}
+.insta,
+.twitter {
+  width: 50px;
+  height: 50px;
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(48, 27, 63);
+  padding: 20px;
+  margin-top: 600px;
+}
+.social {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.footer-text {
+  margin-bottom: 10px;
+  color: white;
+}
+
+.gras {
+  font-size: 19px;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+p {
+  color: white;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+main {
+  margin-top: 36px;
+  display: flex;
+  justify-content: center;
+}
+
+/*menu déroulant*/
+.menuicon {
+  display: none;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.logologo {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 100px;
+}
+/*menu déroulant*/
+
+@media screen and (max-width: 768px) {
+  .headerlist {
+    margin-left: auto;
+    justify-content: center;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo {
+    margin-top: 20px;
+  }
+
+  .top {
+    margin-bottom: 10px;
+  }
+
+  .gras {
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: underline;
+  }
+
+  .headerlist a:hover h1 {
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+  }
+
+  /*menu déroulant*/
+
+  .menuicon {
+    display: block;
+  }
+
+  .logologo {
+    margin-bottom: 10px;
+  }
+
+  .menuopen .headerlist {
+    display: flex;
+  }
+
+  .headerlist {
+    display: none;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .headerlist a {
+    margin: 10px 0;
+    text-align: center;
+    margin-right: 170px; /*je n'arrive pas a centrer à cause margin-left: 62%; ligne 19 :c, mais au moins, le menu marche un peu près*/
+  }
+
+  /*menu déroulant*/
+}
